@@ -1,0 +1,108 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to align items to the start */
+    background-color: #f5f5dc; /* Changed background color to beige */
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centered the flags and title */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-container {
+    text-align: center;
+    margin: 0 20px; /* Added margin to separate from flags */
+}
+
+.title-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.title-container a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.title-container a:hover {
+    text-decoration: underline;
+}
+
+.flag {
+    width: 40px;
+    height: auto;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Content */
+.content {
+    padding: 10px;
+    background: url('background-pattern.png') no-repeat right;
+    background-size: 150px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
