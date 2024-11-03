@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Layout Wrapper */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Button Section */
+.button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-section button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Individual Buttons */
+#new-game {
+    background-color: #d9534f;
+}
+
+#roll-dice, #keep-dice, #end-turn {
+    background-color: #5bc0de;
+}
+
+#roll-dice:hover, #keep-dice:hover, #end-turn:hover, #new-game:hover {
+    opacity: 0.9;
+}
+
+/* Dice Area */
+.rolling-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid black;
+    height: 100px;
+}
+
+/* Dice Styling */
+.dice {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid black;
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dice.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Scorecard Section */
+.scorecard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.scorecard h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.score-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.score-option.disabled {
+    color: #aaa;
+    pointer-events: none;
+}
+
+.score-option span {
+    font-weight: bold;
+}
+
+#total-score-container {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
