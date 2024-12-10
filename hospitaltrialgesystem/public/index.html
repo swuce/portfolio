@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Triage System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Triage System</h1>
+
+        <div id="sign-in">
+            <h2>Sign In</h2>
+            <form id="sign-in-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" maxlength="20" required>
+                
+                <label for="id">ID:</label>
+                <input type="text" id="id" maxlength="6" required>
+                
+                <label for="pain-level">Pain Level:</label>
+                <select id="pain-level" required>
+                    <option value="" disabled selected>Select pain level</option>
+                    <!-- Pain levels from 0 to 10 -->
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                
+                <button type="submit">Sign In</button>
+                <p id="error-message" style="color: red; display: none;">Invalid ID, ID must be 6 characters and numeric.</p>
+            </form>
+        </div>
+
+        <!-- Patient View -->
+        <div id="patient-view" style="display:none;">
+            <h2 id="patient-welcome">Welcome</h2>
+            <p id="wait-time">Wait Time: 0 minutes</p>
+            <p id="patients-ahead">Patients ahead: 0</p> <!-- Display number of patients ahead -->
+        </div>
+
+        <!-- Admin View -->
+        <div id="admin-view" style="display:none;">
+            <h2 id="admin-welcome">Welcome Admin</h2>
+            <h3>List of Patients</h3>
+            <ul id="patient-list">
+                <!-- Patient list will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

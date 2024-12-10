@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2, h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#patient-view, #admin-view {
+    display: none;
+}
+
+form input, form select {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#patient-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Set the text color to cyan for the welcome texts */
+#admin-welcome, #patient-welcome {
+    color: cyan;
+}
+
+/* Style for the patient information in patient view */
+#patient-view p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
