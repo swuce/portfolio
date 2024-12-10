@@ -1,0 +1,13 @@
+{
+    "name": "emergency_waitlist",
+    "version": "1.0.0",
+    "description": "An Emergency Room Triage Application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  
